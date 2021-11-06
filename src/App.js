@@ -15,6 +15,7 @@ function App() {
             placeHolder="Search here..."
           />
         </div>
+        <div className="location-box"></div>
       </main>
     </div>
   );

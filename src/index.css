@@ -12,7 +12,7 @@ body {
 
 .app {
   background-image: url(./Assets/default_clouds.png);
-  background-position: bottom;
+  background-repeat: no-repeat;
   background-size: cover;
   transition: 0.4 ease-out;
 }
@@ -52,4 +52,8 @@ main {
   outline: none;
   background-color: rgba(255, 255, 255, 0.5);
   margin-top: -25px;
+}
+
+.search-bar.search-box:focus {
+  background-color: rgba(255, 255, 255, 0.75);
 }
