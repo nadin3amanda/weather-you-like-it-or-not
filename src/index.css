@@ -21,6 +21,14 @@ body {
 
 .app.warm {
   background-image: url(./Assets/warm.png);
+  background-size: contain;
+  transition: 0.4s ease-out;
+}
+
+.app.cold {
+  background-image: url(./Assets/cloudy_purple.jpeg);
+  background-size: contain;
+  transition: 0.4s ease-out;
 }
 
 main {
