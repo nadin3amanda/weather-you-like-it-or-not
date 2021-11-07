@@ -8,15 +8,16 @@
 
 body {
   font-family: "Dongle", sans-serif;
-}
-
-@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap");
-
-.app {
-  background-image: url(./Assets/default_clouds.png);
+  line-height: 69px;
+  background-image: url(./Assets/pixel_clouds.jpeg);
   background-size: cover;
-  transition: 0.4 ease-out;
+  transition: 0.4s ease-out;
 }
+/*
+.app {
+  
+}
+*/
 
 .app.warm {
   background-image: url(./Assets/warm.png);
@@ -68,11 +69,13 @@ main {
 
 .location-box .date {
   color: #fff;
-  font-size: 90px;
+  font-size: 50px;
   font-weight: 300;
   font-style: italic;
   text-align: center;
   text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+  line-height: 39px;
+  margin-top: 15px;
 }
 
 .weather-box {

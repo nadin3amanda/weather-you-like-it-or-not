@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
 const api = {
   key: "dc5f0c9a6a3a0f330074417fdf61f7e9",
   base: "https://api.openweathermap.org/data/2.5/",
 };
 function App() {
+  const [query, setQuery] = useState("");
+  const [weather, setWeather] = useState("");
+
+  const search = (evt) => {
+    if (evt.key === "Enter") {
+      fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
+        .then((res) => res.json())
+        .then((result) => setWeather(result));
+    }
+  };
   const dateBuilder = (d) => {
     let months = [
       "January",
@@ -35,7 +45,7 @@ function App() {
     let month = months[d.getMonth()];
     let year = d.getFullYear();
 
-    return `${day} ${date} ${month} ${year}`;
+    return `${day}, ${date} ${month} ${year}`;
   };
   return (
     <div className="App">
