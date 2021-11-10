@@ -9,26 +9,44 @@
 body {
   font-family: "Dongle", sans-serif;
   line-height: 69px;
-  background-image: url(./Assets/pixel_clouds.jpeg);
+  background-image: url(./Assets/default.jpeg);
   background-size: cover;
   transition: 0.4s ease-out;
 }
 
-.app {
-  background-image: url(./Assets/default_clouds.png);
+.app.clear {
+  background-image: url(./Assets/clear_sky.png);
   background-size: cover;
   transition: 0.4 ease-out;
 }
 
 
-.app.warm {
-  background-image: url(./Assets/warm.png);
+.app.clouds {
+  background-image: url(./Assets/clouds.png);
   background-size: contain;
   transition: 0.4s ease-out;
 }
 
-.app.cold {
-  background-image: url(./Assets/cloudy_purple.jpeg);
+.app.rain {
+  background-image: url(./Assets/rainny.png);
+  background-size: contain;
+  transition: 0.4s ease-out;
+}
+
+.app.snow {
+  background-image: url(./Assets/snow.jpg);
+  background-size: contain;
+  transition: 0.4s ease-out;
+}
+
+.app.mist {
+  background-image: url(./Assets/sunset.jpg);
+  background-size: contain;
+  transition: 0.4s ease-out;
+}
+
+.app.thunder {
+  background-image: url(./Assets/thunder.png);
   background-size: contain;
   transition: 0.4s ease-out;
 }

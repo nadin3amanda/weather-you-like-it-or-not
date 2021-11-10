@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+//https://openweathermap.org/weather-conditions
 const api = {
   key: "dc5f0c9a6a3a0f330074417fdf61f7e9",
   base: "https://api.openweathermap.org/data/2.5/",
@@ -7,6 +7,37 @@ const api = {
 function App() {
   const [query, setQuery] = useState("");
   const [weather, setWeather] = useState("");
+  const [cn, setCn] = useState("");
+
+  const changeClass = () => {
+    if (weather.main !== undefined) {
+      switch (weather.description) {
+        case "clear sky":
+          setCn("app clear");
+          break;
+        case "scattered clouds":
+          case "broken clouds":
+          case "few clouds":
+          setCn("app clouds");
+          break;
+        case "rain":
+          case "shower rain":
+          setCn("app rain");
+          break;
+        case "snow":
+          setCn("app snow");
+          break;
+        case "thunderstorm":
+          setCn("app thunder");
+          break;
+        case "mist":
+          setCn("app mist");
+          break;
+        default:
+          setCn("app");
+      }
+    }
+  };
 
   const search = (evt) => {
     if (evt.key === "Enter") {
@@ -16,6 +47,7 @@ function App() {
           setWeather(result);
           setQuery("");
           console.log(result);
+          changeClass();
         });
     }
   };
@@ -54,11 +86,7 @@ function App() {
   return (
     <div
       className={
-        typeof weather.main != "undefined"
-          ? weather.main.temp > 20
-            ? "app warm"
-            : "app"
-          : ""
+        cn
       }
     >
       <main>
