@@ -34,7 +34,7 @@ function App() {
           setCn("app mist");
           break;
         default:
-          setCn("app");
+          setCn("");
       }
     }
   };
