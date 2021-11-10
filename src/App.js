@@ -58,7 +58,7 @@ function App() {
           ? weather.main.temp > 20
             ? "app warm"
             : "app"
-          : "app"
+          : ""
       }
     >
       <main>

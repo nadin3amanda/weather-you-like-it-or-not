@@ -13,11 +13,13 @@ body {
   background-size: cover;
   transition: 0.4s ease-out;
 }
-/*
+
 .app {
-  
+  background-image: url(./Assets/default_clouds.png);
+  background-size: cover;
+  transition: 0.4 ease-out;
 }
-*/
+
 
 .app.warm {
   background-image: url(./Assets/warm.png);
