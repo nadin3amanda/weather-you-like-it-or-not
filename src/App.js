@@ -57,22 +57,22 @@ function App() {
         typeof weather.main != "undefined"
           ? weather.weather[0].main = "Clear"
             ? "app clear"
-            : ""
+            : 
             weather.weather[0].main = "Clouds"
             ? "app clouds"
-            : ""
+            : 
             weather.weather[0].main = "Rain"
             ? "app rain"
-            : ""
+            : 
             weather.weather[0].main = "Thunderstorm"
             ? "app thunder"
-            : ""
+            : 
             weather.weather[0].main = "Mist"
             ? "app mist"
-            : ""
+            :
             weather.weather[0].main = "Snow"
             ? "app snow"
-            : ""
+            :
           : ""
       }
     >
