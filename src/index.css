@@ -16,7 +16,7 @@ body {
 
 .app.clear {
   background-image: url(./Assets/clear_sky.jpeg);
-  background-size: cover;
+  background-size: contain;
   transition: 0.4 ease-out;
 }
 
