@@ -4,8 +4,7 @@ RUN mkdir /app
 COPY . /app
 WORKDIR /app
 
-RUN npm i
-
-EXPOSE 3000
+RUN npm install eslint@7.11.0
+RUN npm install
 
 CMD ["npm", "start"]
