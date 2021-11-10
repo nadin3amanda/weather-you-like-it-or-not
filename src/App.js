@@ -72,7 +72,7 @@ function App() {
             :
             weather.weather[0].main == "Snow"
             ? "app snow"
-            :
+            : ""
           : ""
       }
     >
