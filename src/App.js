@@ -11,7 +11,7 @@ function App() {
 
   const changeClass = () => {
     if (weather.main !== undefined) {
-      switch (weather.weather.description) {
+      switch (weather.weather[0].description) {
         case "clear sky":
           setCn("app clear");
           break;
