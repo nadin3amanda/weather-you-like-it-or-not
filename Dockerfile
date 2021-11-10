@@ -4,7 +4,7 @@ RUN mkdir /app
 COPY . /app
 WORKDIR /app
 
-RUN npm i jquery --save
+RUN npm i
 
 EXPOSE 3000
 
